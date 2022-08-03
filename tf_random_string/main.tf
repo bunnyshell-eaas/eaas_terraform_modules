@@ -12,6 +12,4 @@ resource "random_string" "random" {
   special          = false
 }
 
-output "db_key" {
-    value = random_string.random.result
-}
+
