@@ -7,3 +7,10 @@ This list is maintained bt the Bunnyshell team. These modules have been tested a
 
 Using these modules (as well as any Terraform Modules in general) with Bunnyshell EaaS is covered by the [official Bunnyshell documentation](https://documentation.bunnyshell.com/integrations/terraform). 
 
+## Modules
+
+| Provider | Resource | Description | Folder |
+|----------|----------|-------------|--------|
+| aws | EC2 instance | AWS EC2 instance | aws_ec2_instance |
+| aws | S3 Bucket | AWS S3 Bucket | aws_s3_bucket |
+| hashicorp/random | random string | generates random strings| tf_random_string|
