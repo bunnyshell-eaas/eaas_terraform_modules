@@ -2,6 +2,7 @@ data "aws_canonical_user_id" "this" {}
 
 locals {
   create_bucket = var.create_bucket 
+  logging = {}
 
   attach_policy = var.attach_require_latest_tls_policy || var.attach_elb_log_delivery_policy || var.attach_lb_log_delivery_policy || var.attach_deny_insecure_transport_policy || var.attach_policy
 
@@ -41,12 +42,12 @@ resource "aws_s3_bucket" "this" {
 }
 
 resource "aws_s3_bucket_logging" "this" {
-  count = local.create_bucket && length(keys(var.logging)) > 0 ? 1 : 0
+  count = local.create_bucket && length(keys(local.logging)) > 0 ? 1 : 0
 
   bucket = aws_s3_bucket.this[0].id
 
-  target_bucket = var.logging["target_bucket"]
-  target_prefix = try(var.logging["target_prefix"], null)
+  target_bucket = local.logging["target_bucket"]
+  target_prefix = try(local.logging["target_prefix"], null)
 }
 
 resource "aws_s3_bucket_acl" "this" {
