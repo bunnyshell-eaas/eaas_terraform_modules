@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:terraform-aws-modules/terraform-aws-sqs.git
+	branch = master
+	commit = f2524fd3e412a44a8f2d55e80977ba61e433b5ac
+	parent = 453b9739940062626ffe8ff9f234fb2d82910000
+	method = merge
+	cmdver = 0.4.3
