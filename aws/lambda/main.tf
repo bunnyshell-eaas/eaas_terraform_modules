@@ -1,8 +1,7 @@
 data "aws_partition" "current" {}
 
 locals {
-  create = var.create && var.putin_khuylo
-
+  create = var.create
   archive_filename        = try(data.external.archive_prepare[0].result.filename, null)
   archive_filename_string = local.archive_filename != null ? local.archive_filename : ""
   archive_was_missing     = try(data.external.archive_prepare[0].result.was_missing, false)
