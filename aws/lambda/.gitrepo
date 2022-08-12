@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:terraform-aws-modules/terraform-aws-lambda.git
+	branch = master
+	commit = 9d164781174c441c724f86af5486db8fb368282c
+	parent = 1f039a0a17d23c0aaafbd479122e4a81cfcf96d1
+	method = merge
+	cmdver = 0.4.3
