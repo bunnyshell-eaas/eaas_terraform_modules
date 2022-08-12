@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:terraform-aws-modules/terraform-aws-dynamodb-table.git
+	branch = master
+	commit = 036179824624617adf85c0f1421fb7575bf00c6d
+	parent = 97bfdcf3036d6c848c7166dc577f85f455225ed0
+	method = merge
+	cmdver = 0.4.3
