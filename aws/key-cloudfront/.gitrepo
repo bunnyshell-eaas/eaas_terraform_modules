@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:terraform-aws-modules/terraform-aws-cloudfront.git
+	branch = master
+	commit = d296b7c7da6a7bfdc6eae047ca7f47584dbc0e94
+	parent = 23fd56f34a1a1c0af478e7c602d68610abe18916
+	method = merge
+	cmdver = 0.4.3
